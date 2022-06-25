@@ -1,0 +1,12 @@
+#grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+
+.cell {
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 5px;
+    height: 5px;
+}
