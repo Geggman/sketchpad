@@ -1,12 +1,15 @@
+body{
+  margin: 0;
+}
+
 #grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(16, 20px);
+  grid-gap: 10px;
+  justify-content: center;
 }
 
 .cell {
-    padding: 10px;
-    border: 1px solid #ddd;
-    width: 5px;
-    height: 5px;
+  padding: 10px;
+  border: 1px solid black;
 }
