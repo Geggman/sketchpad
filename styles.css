@@ -1,18 +1,12 @@
 #grid {
   display: grid;
-  margin-top:50px;
+  /* margin-top:50px; */
   border: 5px solid black;
-  padding: 0;
-  width:fit-content; 
   justify-content: center;
   height: 500px;
   width: 500px;
 }
 
-.cell {
-  padding: 10px;
-  /* border: 1px solid black; */
-}
 
 .cell:hover{
   background-color: red;
