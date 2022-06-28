@@ -1,11 +1,10 @@
-function drawGrid(){
+function drawGrid(size){
     // Ask for size
-    var cols = prompt("How many columns do you want?");
-    var rows = prompt("How many rows do you want?");
     var grid = document.getElementById('grid');
-
-    for(let i=0; i<cols; i++){
-        for(let j=0; j<rows; j++){
+    grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`
+    grid.style.gridTemplateRows = `repeat(${size}, 1fr)`
+    for(let i=0; i<size; i++){
+        for(let j=0; j<size; j++){
             let cell = document.createElement("div");
             cell.className = "cell";
             grid.appendChild(cell);
@@ -13,6 +12,11 @@ function drawGrid(){
     }
 }
 
+
+document.getElementById("size-btn").onclick = () => {
+    var size = prompt("How many pixels do you want?");
+    drawGrid(size);
+};
 
 
 drawGrid();
