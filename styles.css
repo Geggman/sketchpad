@@ -1,13 +1,9 @@
 #grid {
   display: grid;
-  /* margin-top:50px; */
+  margin-top: 50px;
   border: 5px solid black;
   justify-content: center;
   height: 500px;
   width: 500px;
 }
 
-
-.cell:hover{
-  background-color: red;
-}
