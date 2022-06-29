@@ -3,7 +3,7 @@ const DEFAULT_SIZE = 16;
 
 let currentSize = DEFAULT_SIZE;
 
-
+// Check mouse events
 var mouseDown = false;
 document.body.onmousedown = () => { mouseDown = true };
 document.body.onmouseup = () => { mouseDown = false };
@@ -18,16 +18,18 @@ clearButton.onclick = clearGrid;
 
 function resizeGrid(){
     currentSize = prompt("Enter new size");
-    drawGrid(currentSize);
+    clearGrid();
 }
 
 function drawGrid(size){
-    // Ask for size
+    // Render the grid
     grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`
     grid.style.gridTemplateRows = `repeat(${size}, 1fr)`
+    // Create the cells
     for(let i=0; i < size*size; i++){
         let cell = document.createElement('div');
         cell.classList.add('cell');
+        cell.style.userSelect = 'none'; // remove selection 
         cell.addEventListener('mouseover', changeColor);
         cell.addEventListener('mousedown', changeColor);
         grid.appendChild(cell);
@@ -39,13 +41,15 @@ function changeColor(e){
     e.target.style.backgroundColor = 'black';
 }
 
+
 function clearGrid(){
     grid.innerHTML = '';
+    drawGrid(currentSize);
 }
+
 
 // Start the program
 window.onload = () => {
     drawGrid(DEFAULT_SIZE);
-    console.log(document.getElementById('grid').classList);
 }
 
