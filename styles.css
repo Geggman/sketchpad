@@ -86,7 +86,7 @@ a{
   color: orange;
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: portrait) {
 
   #title {
     font-size: 50px;
