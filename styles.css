@@ -1,9 +1,88 @@
+body{
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  background-color: #393E46;
+  font-family: 'Roboto Mono', monospace;
+}
+
 #grid {
   display: grid;
+  background-color:white;
   margin-top: 50px;
-  border: 5px solid black;
+  /* border: 5px solid black; */
+  box-shadow: -10px 10px 10px #222831; 
   justify-content: center;
   height: 500px;
   width: 500px;
+}
+
+#title{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  color: #EEEEEE;
+}
+
+.options {
+  display: flex;
+  gap: 15px;
+}
+
+.options > button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 50px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.options > input{
+  border: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type=color]{
+  height: 50px;
+  border: 1px solid white;
+  width: 50px;
+}
+
+input[type=color]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+
+input[type=color]:hover{
+  padding: 5px;
+}
+
+button:hover{
+  padding: 10px 25px;
+}
+
+footer{
+  color: white;
+}
+
+a:link, a:active{
+  text-decoration: none;
+}
+
+a{
+  color: orange;
 }
 
