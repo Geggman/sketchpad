@@ -13,16 +13,22 @@ document.body.onmousedown = () => { mouseDown = true };
 document.body.onmouseup = () => { mouseDown = false };
 
 var grid = document.getElementById('grid');
-var clearButton = document.getElementById("clear-btn");
-var sizeButton = document.getElementById("size-btn");
-var eraserButton = document.getElementById("eraser-btn");
-var pencilButton = document.getElementById("pencil-btn");
+var clearButton = document.getElementById('clear-btn');
+var sizeButton = document.getElementById('size-btn');
+var eraserButton = document.getElementById('eraser-btn');
+var pencilButton = document.getElementById('pencil-btn');
+var colorButton = document.getElementById('color-btn');
 
 // Setup button events
 sizeButton.onclick = resizeGrid;
 clearButton.onclick = clearGrid;
 eraserButton.onclick = () => { currentMode = 'eraser' };
 pencilButton.onclick = () => { currentMode = 'pencil' };
+colorButton.oninput = switchColor;
+
+function switchColor(){
+    currentColor = colorButton.value;
+}
 
 function resizeGrid(){
     currentSize = prompt("Enter new size");
