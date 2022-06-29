@@ -86,8 +86,13 @@ a{
   color: orange;
 }
 
-@media (max-width: 1200px) {
-  body{
-    zoom: 50%;
-  } 
+@media (max-width: 650px) {
+  #title {
+    font-size: 50px;
+  }
+
+  #grid{
+    width: 300px;
+    height: 300px;
+  }
 }
