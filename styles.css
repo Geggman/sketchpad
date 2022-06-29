@@ -86,3 +86,14 @@ a{
   color: orange;
 }
 
+@media screen and (max-width: 650px) {
+
+  #title {
+    font-size: 50px;
+  }
+
+  #grid{
+    width: 200px;
+    height: 200px;
+  }
+}
