@@ -5,6 +5,7 @@ body{
   padding: 0;
   align-items: center;
   background-color: #393E46;
+  font-family: 'Roboto Mono', monospace;
 }
 
 #grid {
@@ -35,6 +36,7 @@ body{
   border: 1px solid white;
   cursor: pointer;
   border-radius: 50px;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .options > input{
@@ -71,3 +73,16 @@ input[type=color]:hover{
 button:hover{
   padding: 10px 25px;
 }
+
+footer{
+  color: white;
+}
+
+a:link, a:active{
+  text-decoration: none;
+}
+
+a{
+  color: orange;
+}
+
