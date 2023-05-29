@@ -48,6 +48,12 @@ body{
   cursor: pointer;
 }
 
+.cell:hover{
+  opacity: 50%;
+}
+
+
+/* Color Wheel Start */
 input[type=color]{
   height: 50px;
   border: 1px solid white;
@@ -69,6 +75,7 @@ input[type=color]::-webkit-color-swatch-wrapper {
 input[type=color]:hover{
   padding: 5px;
 }
+/* Color Wheel End */
 
 button:hover{
   padding: 10px 25px;

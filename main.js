@@ -47,6 +47,12 @@ function drawGrid(size){
         cell.className = 'cell';
         cell.style.userSelect = 'none'; // remove selection 
         cell.addEventListener('mouseover', changeColor);
+
+        // cell.addEventListener('mouseenter', () => { cell.style.backgroundColor = currentColor;
+        // });
+        // cell.addEventListener('mouseleave', () => {
+        //    cell.style.backgroundColor = 'white';
+        // });
         cell.addEventListener('mousedown', changeColor);
         grid.appendChild(cell);
     }
