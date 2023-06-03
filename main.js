@@ -26,9 +26,9 @@ eraserButton.onclick = () => { currentMode = 'eraser' };
 pencilButton.onclick = () => { currentMode = 'pencil' };
 colorButton.oninput = switchColor;
 
-
 function switchColor(){
     currentColor = colorButton.value;
+    
 }
 
 function resizeGrid(){
@@ -41,18 +41,13 @@ function drawGrid(size){
     // Render the grid
     grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`
     grid.style.gridTemplateRows = `repeat(${size}, 1fr)`
+
     // Create the cells
     for(let i=0; i < size*size; i++){
         let cell = document.createElement('div');
         cell.className = 'cell';
         cell.style.userSelect = 'none'; // remove selection 
         cell.addEventListener('mouseover', changeColor);
-
-        // cell.addEventListener('mouseenter', () => { cell.style.backgroundColor = currentColor;
-        // });
-        // cell.addEventListener('mouseleave', () => {
-        //    cell.style.backgroundColor = 'white';
-        // });
         cell.addEventListener('mousedown', changeColor);
         grid.appendChild(cell);
     }

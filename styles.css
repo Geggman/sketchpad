@@ -13,7 +13,7 @@ body{
   background-color:white;
   margin-top: 50px;
   /* border: 5px solid black; */
-  box-shadow: -10px 10px 10px #222831; 
+  box-shadow: 0px 0px 50px black; 
   justify-content: center;
   height: 500px;
   width: 500px;
@@ -33,11 +33,41 @@ body{
   padding: 10px 20px;
   background-color: transparent;
   color: white;
-  border: 1px solid white;
+  border: 2px solid white;
   cursor: pointer;
   border-radius: 50px;
   font-family: 'Roboto Mono', monospace;
 }
+
+
+#clear-btn{
+  border: 2px solid lightcoral;
+  background-color: lightcoral;
+  color: black;
+}
+
+/* TODO: MAYBE COME BACK TO THIS DESIGN */
+
+/* #size-btn{
+  border: 3px solid lightblue;
+  background-color: lightblue;
+}
+
+#clear-btn{
+  border: 3px solid lightpink;
+  background-color: lightpink;
+}
+
+#pencil-btn{
+  border: 3px solid lightgreen;
+  background-color: lightgreen;
+
+}
+
+#eraser-btn{
+  background-color: white;
+} */
+
 
 .options > input{
   border: none;
@@ -48,9 +78,6 @@ body{
   cursor: pointer;
 }
 
-.cell:hover{
-  opacity: 50%;
-}
 
 
 /* Color Wheel Start */
@@ -73,12 +100,14 @@ input[type=color]::-webkit-color-swatch-wrapper {
 }
 
 input[type=color]:hover{
-  padding: 5px;
+  /* padding: 2px; */
+  box-shadow: 0px 1px 5px white;
 }
 /* Color Wheel End */
 
 button:hover{
-  padding: 10px 25px;
+  /* padding: 10px 25px; */
+  box-shadow: 0px 1px 5px white;
 }
 
 footer{
