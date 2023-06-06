@@ -32,9 +32,12 @@ function switchColor(){
 }
 
 function resizeGrid(){
-    currentSize = prompt("How many squares per side? (Max 100)");
-    if(currentSize > 100) alert("You've exceeded the maximum (Max 100)");
-    else reloadGrid();
+    var newSize = prompt("How many squares per side? (Max 100)");
+    if(newSize > 100) alert("You've exceeded the maximum (Max 100)");
+    else {
+      currentSize = newSize;
+      reloadGrid();
+    }
 }
 
 function drawGrid(size){
@@ -53,6 +56,10 @@ function drawGrid(size){
     }
 }
 
+function reloadGrid(){
+    grid.innerHTML = '';
+    drawGrid(currentSize);
+}
 
 function changeColor(e){
     if(e.type === 'mouseover' && !mouseDown) return;
@@ -61,10 +68,6 @@ function changeColor(e){
 }
 
 
-function reloadGrid(){
-    grid.innerHTML = '';
-    drawGrid(currentSize);
-}
 
 
 // Start the program
