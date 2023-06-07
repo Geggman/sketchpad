@@ -1,7 +1,6 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap'); /* Yellowtail */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); /* Roboto Mono */
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); /* Caveat */
 
 body{
   display: flex;
