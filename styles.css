@@ -50,30 +50,6 @@ body{
   box-shadow: 0px 1px 8px lightcoral;
 }
 
-
-/* TODO: MAYBE COME BACK TO THIS DESIGN */
-
-/* #size-btn{
-  border: 3px solid lightblue;
-  background-color: lightblue;
-}
-
-#clear-btn{
-  border: 3px solid lightpink;
-  background-color: lightpink;
-}
-
-#pencil-btn{
-  border: 3px solid lightgreen;
-  background-color: lightgreen;
-
-}
-
-#eraser-btn{
-  background-color: white;
-} */
-
-
 .options > input{
   border: none;
   overflow: hidden;
