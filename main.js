@@ -28,12 +28,11 @@ colorButton.oninput = switchColor;
 
 function glowCurrentButtonMode(){
     if(currentMode == 'pencil'){
-        pencilButton.style.boxShadow = "0px 1px 9px white";
-        eraserButton.style.boxShadow = "none";
+        pencilButton.style.filter = "drop-shadow(0px 1px 7px white)";
+        eraserButton.style.filter = "none";
     } else if (currentMode == 'eraser') {
-        eraserButton.style.boxShadow = "0px 1px 9px white";
-        pencilButton.style.boxShadow = "none";
-        pencilButton.style.setProperty("hover", "box-shadow: 0px 1px 5px white");
+        eraserButton.style.filter = "drop-shadow(0px 1px 7px white)";
+        pencilButton.style.filter = "none";
     }
 }
 
