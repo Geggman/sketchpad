@@ -1,3 +1,7 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); /* Roboto Mono */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); /* Caveat */
+
 body{
   display: flex;
   flex-flow: column;
@@ -8,19 +12,22 @@ body{
   font-family: 'Roboto Mono', monospace;
 }
 
+#title{
+  font-family: 'Caveat', cursive;
+  color: #EEEEEE;
+  font-size: 55px;
+  margin-bottom: 22px;
+}
+
 #grid {
   display: grid;
   background-color:white;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   box-shadow: 0px 0px 50px black; 
   justify-content: center;
-  height: 700px;
-  width: 700px;
-}
-
-#title{
-  font-family: 'Oleo Script Swash Caps', cursive;
-  color: #EEEEEE;
+  height: 650px;
+  width: 650px;
 }
 
 .options {
