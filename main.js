@@ -22,9 +22,20 @@ var colorButton = document.getElementById('color-btn');
 // Setup button events
 sizeButton.onclick = resizeGrid;
 clearButton.onclick = reloadGrid;
-eraserButton.onclick = () => { currentMode = 'eraser' };
-pencilButton.onclick = () => { currentMode = 'pencil' };
+eraserButton.onclick = () => { currentMode = 'eraser', glowCurrentButtonMode()};
+pencilButton.onclick = () => { currentMode = 'pencil', glowCurrentButtonMode()};
 colorButton.oninput = switchColor;
+
+function glowCurrentButtonMode(){
+    if(currentMode == 'pencil'){
+        pencilButton.style.filter = "drop-shadow(0px 1px 7px white)";
+        eraserButton.style.filter = "none";
+    } else if (currentMode == 'eraser') {
+        eraserButton.style.filter = "drop-shadow(0px 1px 7px white)";
+        pencilButton.style.filter = "none";
+    }
+}
+
 
 function switchColor(){
     currentColor = colorButton.value;
@@ -33,6 +44,7 @@ function switchColor(){
 
 function resizeGrid(){
     var newSize = prompt("How many squares per side? (Max 100)");
+    if(newSize === null) newSize = DEFAULT_SIZE;
     if(newSize > 100) alert("You've exceeded the maximum (Max 100)");
     else {
       currentSize = newSize;
@@ -73,5 +85,6 @@ function changeColor(e){
 // Start the program
 window.onload = () => {
     drawGrid(DEFAULT_SIZE);
+    glowCurrentButtonMode();
 }
 
