@@ -44,7 +44,7 @@ function switchColor(){
 
 function resizeGrid(){
     var newSize = prompt("How many squares per side? (Max 100)");
-    if(newSize == '') newSize = DEFAULT_SIZE;
+    if(newSize == '' || newSize == null) newSize = DEFAULT_SIZE;
     if(newSize > 100) alert("You've exceeded the maximum (Max 100)");
     else {
       currentSize = newSize;
