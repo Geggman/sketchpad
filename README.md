@@ -1,5 +1,5 @@
 # Pixel Sketch
-A pixel sketchpad made as a part of [TheOdinProject](https://www.theodinproject.com/) corriculum.
+A pixel sketchpad made as a part of [TheOdinProject](https://www.theodinproject.com/) corriculum.  
 Live Demo: https://guylev38.github.io/pixel-sketch/
 
 ## Technologies used
