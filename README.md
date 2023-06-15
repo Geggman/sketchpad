@@ -1,4 +1,4 @@
-# Pixel Sketch
+# Pixel Sketch 🖌️
 A pixel sketchpad made as a part of [TheOdinProject](https://www.theodinproject.com/) corriculum.  
 :link: Live Demo: https://guylev38.github.io/pixel-sketch/
 
