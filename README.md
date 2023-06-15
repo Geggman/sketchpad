@@ -1,6 +1,6 @@
 # Pixel Sketch
 A pixel sketchpad made as a part of [TheOdinProject](https://www.theodinproject.com/) corriculum.  
-Live Demo: https://guylev38.github.io/pixel-sketch/
+:link: Live Demo: https://guylev38.github.io/pixel-sketch/
 
 ## Technologies used
 - ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
