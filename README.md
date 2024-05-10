@@ -11,3 +11,4 @@ A pixel sketchpad made as a part of [TheOdinProject](https://www.theodinproject.
 - I learned how to plan and build a full website from scratch.
 - I learned to use github issues to plan my work and use git more efficeiently.
 - I learned how to use JS to dynamically style the website.
+- I learned how to use css-grid and make a grid mechanic in js using divs.
